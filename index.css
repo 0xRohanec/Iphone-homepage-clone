@@ -1,0 +1,31 @@
+@import url(https://dl.dafont.style/25/20/sweet-kiss.zip);
+*{
+    margin: 0;
+    font-family: "Roboto", sans-serif;
+}
+:root{
+    --primary-color : #ededed;
+}
+nav{
+    padding: 5px;
+    height: 30px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 33px;
+}
+nav img{
+    height: 15px;
+}
+
+a{
+    text-decoration: none;
+    font-size: smaller;
+    color: rgba(0, 0, 0, 0.815);
+}
+header{
+    height: 100px;
+    width: 100%;
+    border: solid;
+}
