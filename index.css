@@ -7,25 +7,74 @@
     --primary-color : #ededed;
 }
 nav{
-    padding: 5px;
+    padding-top: 7px;
     height: 30px;
     width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 33px;
-}
-nav img{
-    height: 15px;
-}
-
-a{
-    text-decoration: none;
-    font-size: smaller;
-    color: rgba(0, 0, 0, 0.815);
+    img{
+        height: 15px;
+    }
+    a{
+        text-decoration: none;
+        font-size: smaller;
+        color: rgba(0, 0, 0, 0.815);
+    }
 }
 header{
-    height: 100px;
+    height: 125px;
     width: 100%;
-    border: solid;
+    padding-bottom: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 44px;
+    a{
+    text-decoration: none;
+    }
+}
+.primary-link{
+    text-align: center;
+    color: rgba(0, 0, 0, 0.774);
+    font-size: 0.7rem;
+    animation: dragright 0.3s forwards linear;
+}
+@keyframes dragright{
+    from{
+        position: relative;
+        left: 100px;
+        opacity: 0;
+    }
+    to{
+        position: relative;
+        left: 0px;
+        opacity: 1;
+    }
+}
+.para1{
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.85rem;
+    background-color: rgba(211, 211, 211, 0.233);
+    font-weight: lighter;
+    animation: paradrag 1s forwards ease-in-out;
+    a{
+        text-decoration: none;
+    }
+}
+@keyframes paradrag{
+    from{
+        position: relative;
+        bottom: 20px;
+        opacity: 0;
+    }
+    to{
+        position: relative;
+        bottom: 0px;
+        opacity: ;
+    }
 }
