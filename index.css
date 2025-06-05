@@ -75,6 +75,70 @@ header{
     to{
         position: relative;
         bottom: 0px;
-        opacity: ;
+        opacity: 1;
     }
 }
+.banner1{
+    height: 240px;
+    width: 100%;
+    
+    display: flex;
+}
+.banner1>.text1{
+        font-size: 72px;
+        position: relative;
+        top: 85px;
+        left: 6%;
+        animation: dragtex 1s ease-in-out forwards;
+    }
+    @keyframes dragtex{
+        from{
+            margin-top: 20px;
+            opacity: 0;
+        }
+        to{
+            margin-top: 0px;
+            opacity: 1;
+        }
+    }
+    .banner1>.text2{
+        font-size: 1.6rem;
+        position: relative;
+        top: 140px;
+        left: 55%;
+        animation: dragtext2 1s ease-in-out forwards ;
+    }
+    @keyframes dragtext2{
+        from{
+            margin-top: 20px;
+            opacity: 0;
+        }
+        to{
+            margin-top: 0px;
+            opacity: 1;
+        }
+    }
+    .videos{
+        height: 120vh;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .videos>video{
+        height: 100%;
+        width: 95%;
+        object-fit: cover;
+        border-radius: 20px;
+    }
+    .banner2{
+        height: 280px;
+        width: 100%;
+        animation: dragtext2 1s ease-in-out forwards ;
+    }
+    .banner2>.text11{
+        font-size: 50px;
+        position: relative;
+        top: 55%;
+        left: 5%;
+    }
