@@ -6,6 +6,9 @@
 :root{
     --primary-color : #ededed;
 }
+html{
+    scroll-behavior: smooth;
+}
 nav{
     padding-top: 7px;
     height: 30px;
@@ -124,6 +127,7 @@ header{
         display: flex;
         align-items: center;
         justify-content: center;
+        animation: dragvid 1s ease-in-out forwards ;
     }
     .videos>video{
         height: 100%;
@@ -142,3 +146,48 @@ header{
         top: 55%;
         left: 5%;
     }
+    @keyframes dragvid{
+        from{
+            position: relative;
+            top: 20%;
+            opacity: 0;
+        }
+        to{
+            position: relative;
+            top: 0%;
+            opacity: 1;
+        }
+    }
+    .container{
+        height: 120vh;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: space-evenly;
+        padding-left: 30px;
+    }
+    .container>div{
+        width: 31%;
+        height: 100%;
+        display: flex;
+        position: relative;
+    }
+    .container>div:hover{
+        transition: all 0.3s ease-in-out;
+        height: 102%;
+        width: 32%;
+    }
+    .container>div>img{
+        height: 100%;
+        width: 100%;
+        border-radius: 30px;
+    }
+    .container>div>p{
+            top: 80%;
+            font-size: 18px;
+            font-weight: bold;
+        }
+        .container > div > h1 {
+    font-size: 24px;
+}
