@@ -163,20 +163,22 @@ header{
         width: 100%;
         display: flex;
         align-items: center;
-        flex-direction: column;
         justify-content: space-evenly;
-        padding-left: 30px;
+        padding-left: 35px;
     }
     .container>div{
-        width: 31%;
+        width: 30%;
         height: 100%;
         display: flex;
+        flex-direction: column;
+        align-items: center;
         position: relative;
+        object-fit: cover;
     }
     .container>div:hover{
         transition: all 0.3s ease-in-out;
         height: 102%;
-        width: 32%;
+        width: 31%;
     }
     .container>div>img{
         height: 100%;
@@ -184,10 +186,22 @@ header{
         border-radius: 30px;
     }
     .container>div>p{
-            top: 80%;
-            font-size: 18px;
-            font-weight: bold;
-        }
-        .container > div > h1 {
-    font-size: 24px;
-}
+        color: var(--primary-color);
+        font-size: 18px;
+        font-weight: bold;
+        position: relative;
+        bottom: 95%;
+        right: 22%;
+    }
+    .container>div>div{
+        color: var(--primary-color);
+        width: 65%;
+        font-size: 13px;
+        position: relative;
+        bottom: 93%;
+        right: 13%;
+    }
+    .blank_space{
+        height: 240px;
+        width: 100%;
+    }
